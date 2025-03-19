@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
    <figcaption>Motivation, rigueur, persévérance, écoute et très bon esprit d'équipe sont mes principales qualités.</figcaption>
    </figure>
   <h2>Expériences professionnelles</h2>
-  <table>
+  <table class="experiences">
     <tbody>
       <tr>
         <td>Mai 2018 à actuel</td>
@@ -151,10 +151,14 @@ document.querySelector('#app').innerHTML = `
   </ul>
   <h2>informatique</h2>
   <ul>
-    <li>	MS-Office (Word, Excel, Outlook, Internet).</li>
-    <li>	Programmation en langage PL7 Pro pour A.P.I. TELEMECANIQUE MICRO et PREMIUM.</li>
-    <li>	Programmation en langage S7 pour les A.P.I. SIEMENS S7 300/400.</li>
-    <li></li>  
+    <li>MS-Office (Word, Excel, Outlook, Internet).</li>
+    <li>Programmation en langage PL7 Pro pour A.P.I. TELEMECANIQUE MICRO et PREMIUM.</li>
+    <li>Programmation en langage S7 pour les A.P.I. SIEMENS S7 300/400.</li>
+    <li>Programmation automate SCHNEIDER MODICON M340.</li>  
+  </ul>
+  <h2>RENSEIGNEMENTS PERSONNELS</h2>
+  <ul>
+    <li></li>
   </ul>
 
   </div>
