@@ -2,7 +2,7 @@
 div#app{
   width: 70%;
   margin: 0 6em;
-  /* background-color: blueviolet; */
+  
 }
 
 h1{
@@ -11,10 +11,7 @@ h1{
 img{
   float: left;
 }
-figure{
-  /* background-color: blue; */
-  
-}
+
 figcaption{
   padding-top: 5em;
   text-align: center;
@@ -26,17 +23,20 @@ h2{
 }
 table{
   width: 100%; 
-  /* background-color: aqua; */
+
 }
 table.experiences ul{
 list-style: none;
+text-align: left;
 }
+
 
 td{
   width: 50%;
   text-align: center;
-  /* border: 1.5px solid black; */
+ 
 }
 ul{
-  /* list-style: none; */
+  margin-left: 5em;
+
 }

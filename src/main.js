@@ -1,14 +1,35 @@
+import {renderHeader} from './conteneur/header.js';
+import {renderExperiences} from './conteneur/experiences.js';
+import { renderFormation } from './conteneur/formation.js';
+import { renderLangues } from './conteneur/langues.js';
+import { renderInformatique } from './conteneur/informatique.js';
+import { renderRensignements } from './conteneur/renseignementsPersonnels.js';
+import { renderAutredonnees } from './conteneur/d\'autresDonnes.js';
+
+
 import './style.css'
+import 'remixicon/fonts/remixicon.css'
 
 
-document.querySelector('#app').innerHTML = `
-  <div>
-   <h1>Jesus Roldan Perez de Siles</h1>
+   const app = document.querySelector('#app');
+   
+   app.innerHTML=`
+    ${renderHeader()}
+    ${renderExperiences()}
+    ${renderFormation()}
+    ${renderLangues()}
+    ${renderInformatique()}
+    ${renderRensignements()}
+    ${renderAutredonnees()}
+  
+
+  <!-- <div> -->
+   <!-- <h1>Jesus Roldan Perez de Siles</h1>
    <figure>
    <img src="/public/zen05.jpg">
    <figcaption>Motivation, rigueur, persévérance, écoute et très bon esprit d'équipe sont mes principales qualités.</figcaption>
-   </figure>
-  <h2>Expériences professionnelles</h2>
+   </figure> -->
+  <!-- <h2>Expériences professionnelles</h2>
   <table class="experiences">
     <tbody>
       <tr>
@@ -113,8 +134,8 @@ document.querySelector('#app').innerHTML = `
         </td>
       </tr>
     </tbody>
-  </table>
-  <h2>formation</h2>
+  </table> -->
+  <!-- <h2>formation</h2>
   <table>
     <tbody>
       <tr>
@@ -142,26 +163,36 @@ document.querySelector('#app').innerHTML = `
         <td>I.E.S. Río Verde - Études supérieures d’administration et de gestion</td>
       </tr>
     </tbody>
-  </table>
-  <h2>langues</h2>
+  </table> -->
+  <!-- <h2>langues</h2>
   <ul>
     <li>Espagnol :	Langue maternelle</li>
     <li>Français : 	Bonnes connaissances</li>
     <li>Anglais : 	Connaissance de base</li>
-  </ul>
-  <h2>informatique</h2>
+  </ul> -->
+  <!-- <h2>informatique</h2>
   <ul>
     <li>MS-Office (Word, Excel, Outlook, Internet).</li>
     <li>Programmation en langage PL7 Pro pour A.P.I. TELEMECANIQUE MICRO et PREMIUM.</li>
     <li>Programmation en langage S7 pour les A.P.I. SIEMENS S7 300/400.</li>
     <li>Programmation automate SCHNEIDER MODICON M340.</li>  
-  </ul>
-  <h2>RENSEIGNEMENTS PERSONNELS</h2>
+  </ul> -->
+  <!-- <h2>RENSEIGNEMENTS PERSONNELS</h2>
   <ul>
-    <li></li>
+    <li><i class="ri-webhook-fill"></i> Date de naissance : 05/04/1982</li>
+    <li>Nationalité : Espagnole</li>
+    <li>Situation de famille : Cohabitation légale</li>
+    <li>Adresse : Rue des Queutralles N°6 à 1490 Court-St-Etienne</li>
+    <li>GSM : 0473/68.33.65</li>
+    <li>E-mail : jesus.roldan82@hotmail.com</li>
+  </ul> -->
+  <!-- <h2>D’AUTRES DONEES</h2>
+  <ul>
+    <li>Permis de conduire B-1</li>
+    <li>Brevet-cariste</li>
   </ul>
 
-  </div>
+  </div> -->
 `
 
 
